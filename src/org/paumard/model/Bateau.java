@@ -66,8 +66,12 @@ public class Bateau {
 
 	@Override
 	public String toString() {
-		return "Bateau [id=" + id + ", nom=" + nom + ", tonnage=" + tonnage
-				+ ", equipage=" + equipage + "]";
+		StringBuilder sb = new StringBuilder();
+		sb.append("id=").append(id+", ");
+		sb.append("nom=").append(nom+", ");
+		sb.append("tonnage=").append(tonnage+", ");
+		sb.append("statut=").append(statut);
+		return sb.toString();
 	}
 
 	public Statut getStatut() {
