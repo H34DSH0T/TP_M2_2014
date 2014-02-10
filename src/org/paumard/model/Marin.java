@@ -65,7 +65,12 @@ public class Marin {
 
 	@Override
 	public String toString() {
-		return "Marin [id=" + id + ", nom=" + nom + ", prenom=" + prenom
-				+ ", age=" + age + ", adresse=" + adresse + "]";
+		StringBuilder sb = new StringBuilder();
+		sb.append("id=").append(id+", ");
+		sb.append("nom=").append(nom+", ");
+		sb.append("prenom=").append(prenom+", ");
+		sb.append("age=").append(age);
+		sb.append("adresse=").append(adresse.toString());
+		return sb.toString();
 	}
 }
